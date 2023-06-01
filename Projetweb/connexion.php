@@ -65,6 +65,7 @@ if($_SERVER["REQUEST_METHOD"]==="POST"){
         <input type="submit" value="Se connecter">
     </form>
     <p>Pas encore inscrit? <a href="inscription.php">Incrivez-vous !</a></p>
+    <p>Retour à <a href="index.php">l'accueil</a></p>
     </div>
 </div>
 

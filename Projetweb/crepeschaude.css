@@ -9,8 +9,7 @@ background-color: #f4f4f4;
 }
 
 .sidebar{
-    background-color: #d1500f;
-    color: #fff;
+    color: #000;
     width: 200px;
     height: 100vh;
     position: fixed;
@@ -41,7 +40,6 @@ background-color: #f4f4f4;
 }
 
 footer{
-    background-color: #d1500f;
     color: #fff;
     text-align: center;
     margin-left: 220px;
