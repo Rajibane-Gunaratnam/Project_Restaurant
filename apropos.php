@@ -10,7 +10,7 @@ require("debut.php");
             <div class="nav-links">
 
                 <ul>
-                    <li class = "Acceuil" class = "active"><a href="index.php">Acceuil</a></li>
+                    <li class = "Accueil" class = "active"><a href="index.php">Acceuil</a></li>
                     <li><a href="menu.php">Carte</a></li>
                     <li><a href="apropos.php">A propos</a></li>
                     <li><a href="avis.php">Avis</a></li>

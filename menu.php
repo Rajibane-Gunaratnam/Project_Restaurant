@@ -1,12 +1,18 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <meta charset="utf-8"/>
-    <title>CARTE</title>
-    <link rel="stylesheet" type="text/css" href="crepeschaude.css">
-    <script src="myscript.js"></script>
-</head>
-<body>
+<?php
+$titre = "Crêpes Chaudes";
+require("debut.php");
+
+session_start();
+
+if(isset($_SESSION['username'])){
+    $user = $_SESSION['username'];
+
+    $codeco = "<li><a href='deconnexion.php'>Déconnexion</a></li>";
+    
+}else{
+    $codeco = "<li><a href='connexion.php'>Connexion</a></li>";
+}
+?>
     <header>
         <nav class="navbar">
             
@@ -15,12 +21,11 @@
             <div class="nav-links">
 
                 <ul>
-                    <li class = "Acceuil" class = "active"><a href="index.php">Acceuil</a></li>
+                    <li class = "Accueil" class = "active"><a href="index.php">Acceuil</a></li>
                     <li><a href="menu.php">Carte</a></li>
                     <li><a href="apropos.php">A propos</a></li>
                     <li><a href="avis.php">Avis</a></li>
-                    <li><a href="connexion.php">Sign-up</a></li>
-                    <li><a href="connexion.php">login</a></li>
+                    <?php echo $codeco; ?>
                 </ul>
             </div>
 
